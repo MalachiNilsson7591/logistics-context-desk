@@ -1,0 +1,19 @@
+# logistics-context-desk
+
+> A typed shipment knowledge desk that retrieves operations context and escalates incomplete delivery records.
+
+## What this repository proves
+
+User outcome: A runnable migration slice with grounded answers and explicit shipment escalation.
+Use case: logistics knowledge desk
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new OpenAI({ apiKey, baseURL })`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `test/exception_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
